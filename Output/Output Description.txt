@@ -1,0 +1,8 @@
+This is the Output Folder
+
+Types of Output
+
+1. Figures (PNG)
+2. Data (Pressure Coefficent[s], LDM [Lift, Drag, Moment] Coefficent[s])
+3. Regression Models (Pressure Coefficent[s], LDM [Lift, Drag, Moment] Coefficent[s])
+4. Airfoil Data in terms of X Upper, Y Upper, X Lower, Y Lower
