@@ -43,16 +43,16 @@ for i = 1:1:x_grid  % Solve for X & Y Velocities
         y_n(size(x_integral_1, 1) + 1, :) = [0 zeros(1, size(x_integral_1, 1) - 1) 0];
 
 
-        [in, on] = inpolygon(x_point, y_point, x_boundary, y_boundary);
+        [in, on] = inpolygon(x_point, y_point, x_boundary, y_boundary);  % Checks if points are inside or outside of Airfoil
 
         if(in == 1 || on == 1)
 
-            x_velocity(i,j) = 0;   % No Slip Condition
+            x_velocity(i,j) = 0;   % Zero Velocity inside Airfoil
             y_velocity(i,j) = 0;
 
         else
 
-            x_velocity(i,j) = uniform_flow_velocity * cosd(aoa_vector(aoa_index + 1 - aoa_vector(1))) + sum(gamma{aoa_index + 1 - aoa_vector(1)}' * x_n);  % Solve with given Angle of Attack
+            x_velocity(i,j) = uniform_flow_velocity * cosd(aoa_vector(aoa_index + 1 - aoa_vector(1))) + sum(gamma{aoa_index + 1 - aoa_vector(1)}' * x_n);  % Solve for velocity with given Angle of Attack
             y_velocity(i,j) = uniform_flow_velocity * sind(aoa_vector(aoa_index + 1 - aoa_vector(1))) + sum(gamma{aoa_index + 1 - aoa_vector(1)}' * y_n);
 
         end
