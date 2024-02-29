@@ -17,7 +17,7 @@ end
 
 subtitle(['C_L = ' , num2str(CL{aoa_index}) , ' C_LK = ' , num2str(CL_k{aoa_index}) ,' C_D = ' , num2str(CD{aoa_index}), ' C_M = ' , num2str(CM{aoa_index})]); % Label Coefficients for Corresponding Angle of Attack
   
-% Convert cells to mzatrixes to plot
+% Convert cells to matrixes to plot
 CL = cell2mat(CL); 
 CL_k = cell2mat(CL_k);
 CD = cell2mat(CD);
