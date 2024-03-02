@@ -12,9 +12,9 @@ ft = fittype( 'poly4' );
 
 
 f = figure;
-plot(fitresult1, xData, yData, "r.");
+plot(fitresult1, xData, yData, "ro");
 hold on
-plot(fitresult2, xData2, yData2, "b.");
+plot(fitresult2, xData2, yData2, "bo");
 hold off
 xlabel('Angle of Attack [°]');
 ylabel('C_L');

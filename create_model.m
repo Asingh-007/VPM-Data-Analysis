@@ -11,7 +11,7 @@ ft = fittype( 'poly4' );
 
 
 f = figure;
-plot(fitresult, xData, yData, "b.")
+plot(fitresult, xData, yData, "bo")
 xlabel(xlabel1);
 ylabel(ylabel1);
 title(plot_title);
