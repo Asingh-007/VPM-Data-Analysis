@@ -55,7 +55,7 @@ if export_data
 end
 
 
-if export_figures
+if export_figures && size(aoa_vector, 2) > 1 
 
     exportgraphics(f1, 'Output\' + plot_title + '_CP_Plot.png');
     exportgraphics(f2, 'Output\' + plot_title + '_CL_Plot.png');
