@@ -72,7 +72,7 @@ for i = 1:boundary_points
     y_lower(i) = yc(i) - yt(i)*cos(theta(i));
 end
 
-plot_title = strcat("NACA ", type);
+plot_title = strcat("NACA_", type);
 
 if export_af
     export_airfoil(x_upper, y_upper, x_lower, y_lower, plot_title);
