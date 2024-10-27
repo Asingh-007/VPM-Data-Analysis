@@ -5,7 +5,7 @@ function[fitresult1, fitresult2] =  create_lift_models(x_data, plot1, plot2, exp
 [xData2, yData2] = prepareCurveData( x_data, plot2 );
 
 % Degree 4 Polynomial Regression
-ft = fittype( 'poly4' );
+ft = fittype( 'poly1' );
 
 [fitresult1, gof1] = fit( xData, yData, ft );
 [fitresult2, gof2] = fit( xData2, yData2, ft );
